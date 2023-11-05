@@ -3,7 +3,7 @@ pipeline {
 
     parameters {
         string(name: 'GIT_REPO', description: 'Git Repository URL', defaultValue: 'https://github.com/PriyankaSahu17/letslearngit.git')
-        string(name: 'GIT_BRANCH', description: 'Git Branch', defaultValue: 'master')
+        string(name: 'GIT_BRANCH', description: 'Git Branch', defaultValue: 'main')
     }
 
     stages {
