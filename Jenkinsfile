@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script {
                     def sourceDir = "${env.WORKSPACE}"
-                    def targetDir = "C:\\Apache24"
+                    def targetDir = "C:\\Apache24\\htdocs"
                     def copyResult = bat(script: "xcopy /s /e /y \"$sourceDir\" \"$targetDir\"", returnStatus: true)
                     if (copyResult == 0) {
                         currentBuild.result = 'SUCCESS'
